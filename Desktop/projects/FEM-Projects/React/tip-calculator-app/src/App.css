@@ -1,0 +1,48 @@
+h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding-bottom: 5rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+span {
+    display: block;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+h4 {
+    font-size: 1.3rem;
+    padding-bottom: .8rem;
+    opacity: .7;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7rem;
+}
+
+.container {
+    height: 40rem;
+    width: 70rem;
+    background-color: var(--white);
+    display: flex;
+    border-radius: 12px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}

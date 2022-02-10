@@ -1,0 +1,135 @@
+.container__right {
+    width: 50%;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--very-dark-cyan);
+    border-radius: 10px;
+    color: var(--white);
+
+}
+
+.content__total {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content__total--tip,
+.content__total--total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.content__total--tip {
+    padding-bottom: 2rem;
+}
+
+.content__total--tip h4,
+.content__total--total h4 {
+    color: white;
+    opacity: 1;
+    letter-spacing: 1px;
+}
+
+.content__total--tip span,
+.content__total--total span {
+    font-size: 1rem;
+    padding-top: .5rem;
+    color: var(--dark-grayish-cyan-2);
+}
+
+.content__total--tip h3,
+.content__total--total h3 {
+    font-size: 3.5rem;
+    color: var(--strong-cyan);
+}
+
+#reset {
+    width: 100%;
+    background-color: var(--strong-cyan);
+    /* opacity: .4; */
+    text-decoration: none;
+    color: var(--very-dark-cyan);
+    font-size: 1.7rem;
+    text-align: center;
+    border-radius: 4px;
+    padding: 1rem 0;
+    font-weight: 700;
+    outline: none;
+    border: none;
+}
+
+#reset:hover {
+    transform: translateY(-3px);
+    box-shadow: .5rem .5rem .5rem rgba(48, 209, 155, 0.3);
+}
+
+#reset:active {
+    transform: translateY(1px);
+    box-shadow: .2rem .2rem .2rem rgba(48, 209, 155, 0.3);
+}
+
+@media (max-width: 500px) {
+
+    /* html{
+        font-size: 58%;
+    } */
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        width: 100%;
+        height: 90rem;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        margin: 0;
+    }
+
+    .container__left {
+        width: 90%;
+        height: 50%;
+
+    }
+
+    .bill__input--amount,
+    .people__input--amount {
+        font-size: 2rem;
+    }
+
+    .selected-tip__buttons {
+        display: grid;
+        grid-template-rows: 4rem 4rem;
+        grid-template-columns: 10rem 10rem 10rem;
+        grid-gap: 1rem;
+
+    }
+
+    .container__right {
+        width: 90%;
+        height: 50%;
+    }
+
+    .container__right h4 {
+        font-size: 2rem;
+    }
+
+    .container__right h3 {
+        font-size: 2.5rem;
+    }
+
+}
